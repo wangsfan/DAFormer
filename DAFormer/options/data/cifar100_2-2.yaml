@@ -1,5 +1,0 @@
-data_set: CIFAR
-initial_increment: 2
-increment: 2
-
-log_category: 2-2

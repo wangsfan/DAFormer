@@ -1,5 +1,0 @@
-numpy==1.23.5
-torch==1.12.1
-torchvision==0.13.1
-timm==0.4.9
-continuum==1.2.7

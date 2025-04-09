@@ -1,5 +1,0 @@
-data_set: imagenet100
-initial_increment: 10
-increment: 10
-
-log_category: 10-10
