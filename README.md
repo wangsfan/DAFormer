@@ -19,8 +19,7 @@ maintaining the same neighborhood relationship of each sample over old and new m
 
 ## Usage
 ##### 1. Install dependencies
-```
-```
+
 ##### 2. Run code
 For CIFAR-100 as an example(memory size/class 20)
 ```
