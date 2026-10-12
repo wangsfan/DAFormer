@@ -1,6 +1,7 @@
 # DAFormer
 ## Introduction
 This is our implementation of our paper *Dual-Attention Transformers for Class-Incremental Learning: A Tale of Two Memories*. Authors: Shaofan Wang, Weixing Wang, Yanfeng Sun, Zhiyong Wang, Boyue Wang, Baocai Yin. Cite it as
+
 @ARTICLE{Wang2025Dual,
   author={Wang, Shaofan and Wang, Weixing and Sun, Yanfeng and Wang, Zhiyong and Wang, Boyue and Yin, Baocai},
   journal={IEEE Transactions on Multimedia}, 
