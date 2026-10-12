@@ -1,14 +1,21 @@
 # DAFormer
 ## Introduction
-This is our implementation of our paper *Dual-Attention Transformers for Class-Incremental Learning: A Tale of Two Memories*. Authors: Shaofan Wang, Weixing Wang, Yanfeng Sun, Zhiyong Wang, Boyue Wang, Baocai Yin. Accepted by IEEE Transactions on Multimedia 
+This is our implementation of our paper *Dual-Attention Transformers for Class-Incremental Learning: A Tale of Two Memories*. Authors: Shaofan Wang, Weixing Wang, Yanfeng Sun, Zhiyong Wang, Boyue Wang, Baocai Yin. Cite it as
+@ARTICLE{Wang2025Dual,
+  author={Wang, Shaofan and Wang, Weixing and Sun, Yanfeng and Wang, Zhiyong and Wang, Boyue and Yin, Baocai},
+  journal={IEEE Transactions on Multimedia}, 
+  title={Dual-Attention Transformers for Class-Incremental Learning: A Tale of Two Memories}, 
+  year={2025},
+  volume={27},
+  number={},
+  pages={8763-8775},
+  doi={10.1109/TMM.2025.3607800}}
+
 
 **TL;DR**: A dual attention mechanism for class-incremental learning.
 
 **Abstract**:
-Class-incremental learning (Class-IL) aims to continuously learn a model from a sequence of tasks, which suffers from the issue of catastrophic forgetting. Recently, a
-few transformer based methods are proposed to address this issue by transferring self-attention into task-specific attention. However, these methods utilize shared task-specific attention modules across the whole incremental learning process, and are unable to achieve the balance between consolidation and plasticity, i.e., to remember the knowledge learned from previous tasks and absorb the knowledge from the current task simultaneously. Motivated by the mechanism of LSTM and hippocampus
-memory, we point out that dual attention on long and short term memories can handle the consolidation-plasticity dilemma of Class-IL. Typically, we propose Dual-Attention Transformers (DAFormer) to learn external attention and internal attention. The former utilizes sample-dependent keys which exclusively focused on the new tasks, while the latter consolidates the knowledge from previous tasks by using sample-agnostic keys. We present two editions of DAFormer: DAFormer-S and DAFormer-M: the former utilizes shared external keys and maintains a small parameter size, while the latter utilizes multiple external keys and enhances the long-term memory. Furthermore, we propose the K-nearest neighbor invariant based distillation scheme, which distills knowledge from previous tasks to current task by
-maintaining the same neighborhood relationship of each sample over old and new models. Experimental results on CIFAR-100, ImageNet-subset and ImageNet-full demonstrate that DAFormer significantly outperforms all the state-of-the-art parameter-static and parameter-growing methods. 
+Class-incremental learning (Class-IL) aims to continuously learn a model from a sequence of tasks, which suffers from the issue of catastrophic forgetting. Recently, a few transformer based methods are proposed to address this issue by transferring self-attention into task-specific attention. However, these methods utilize shared task-specific attention modules across the whole incremental learning process, and are unable to achieve the balance between consolidation and plasticity, i.e., to remember the knowledge learned from previous tasks and absorb the knowledge from the current task simultaneously. Motivated by the mechanism of LSTM and hippocampus memory, we point out that dual attention on long and short term memories can handle the consolidation-plasticity dilemma of Class-IL. Typically, we propose Dual-Attention Transformers (DAFormer) to learn external attention and internal attention. The former utilizes sample-dependent keys which exclusively focused on the new tasks, while the latter consolidates the knowledge from previous tasks by using sample-agnostic keys. We present two editions of DAFormer: DAFormer-S and DAFormer-M: the former utilizes shared external keys and maintains a small parameter size, while the latter utilizes multiple external keys and enhances the long-term memory. Furthermore, we propose the K-nearest neighbor invariant based distillation scheme, which distills knowledge from previous tasks to current task by maintaining the same neighborhood relationship of each sample over old and new models. Experimental results on CIFAR-100, ImageNet-subset and ImageNet-full demonstrate that DAFormer significantly outperforms all the state-of-the-art parameter-static and parameter-growing methods. 
 
 ## Dependencies
 - numpy==1.23.5
